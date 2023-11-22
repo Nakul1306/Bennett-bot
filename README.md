@@ -59,7 +59,7 @@ Then run
  ```console
 python app.py
  ``` 
-You can see the webpage on http://127.0.0.1:5000/ 
+You can see the webpage on http://127.0.0.1:5000/ after running the `app.py` file
 
 ## Customize
 Have a look at [intents.json](intents.json). You can customize it according to your own use case. Just define a new `tag`, possible `patterns`, and possible `responses` for the chat bot. You have to re-run the training whenever this file is modified.
