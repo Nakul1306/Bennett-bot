@@ -1,0 +1,79 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bennett</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <a href="https://www.bennett.edu.in/"><img src="{{ url_for('static', filename='logo.jpg') }}" class="logo"></a>
+            <ul>
+                <li><a href="http://127.0.0.1:5000/">Home</a></li>
+                <li><a href="{{ url_for('static', filename='index-2.html') }}">About</a></li>
+                <li><a href="https://www.bennett.edu.in/admission/admission-process/">Admissions</a></li>
+                <li><a href="{{ url_for('static', filename='index-4.html') }}">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="content">
+        <p></p>
+        <div class="background"></div>
+        <center>
+        <div id="chat-container">
+            <div id="chat"></div>
+            <input type="text" id="user-input" placeholder="Type your message...">
+            <button id="send-button">Send</button>
+        </div>
+        </center>
+    </div>
+
+    
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById('send-button').addEventListener('click', function() {
+                sendMessage();
+            });
+        });
+
+        function sendMessage() {
+            const userInput = document.getElementById('user-input').value.trim();
+            
+            // Check if the user input is not empty before sending a message
+            if (userInput !== "") {
+                appendMessage(userInput, 'user');
+
+                // Make a POST request to the Flask app to get the chatbot's response
+                fetch('/api/chat', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ message: userInput }),
+                })
+                .then(response => response.json())
+                .then(data => {
+                    const chatbotResponse = data.response;
+                    appendMessage(chatbotResponse, 'chatbot');
+                });
+
+                // Clear the input field after sending a message
+                document.getElementById('user-input').value = "";
+            }
+        }
+
+        function appendMessage(message, sender) {
+            const chatContainer = document.getElementById('chat');
+            const messageDiv = document.createElement('div');
+            messageDiv.className = sender;
+            messageDiv.innerText = message;
+            chatContainer.appendChild(messageDiv);
+        }
+    </script>
+</body>
+</html>
