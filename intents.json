@@ -1,0 +1,147 @@
+{"intents": [
+    {"tag": "greetings",
+    "patterns": ["hello", "hey", "hi", "good day", "Greetings", "what's up?", "how is it going?"],
+    "responses": ["Hello!", "Hey!", "What can I do for you?"]
+    },
+
+    {"tag": "goodbye",
+    "patterns": ["cya", "See you later", "Goodbye", "I am leaving", "Have a good day", "bye", "See ya", "have to go"],
+    "responses": ["Sad to see you go :(", "Goodbye!", "Talk to you later"]
+    },
+
+    {"tag": "name",
+    "patterns": ["What is your name", "What should I call you", "whats your name?", "who are you?", "Can you tell me your name?"],
+    "responses": ["You can call me Bennett-Bot", "I am Bennett-Bot!", "I'm Bennett-Bot, assistant for Bennett University"]
+    },
+
+    {"tag": "address",
+    "patterns": ["where is college situated", "what is the location of college?", "where is college?", "address of the university", "how can i reach university?", "what is the address of bennett?"],
+    "responses": ["Plot Nos 8, 11, TechZone 2, Greater Noida, Uttar Pradesh 201310", "Google map pin- https://www.google.com/maps/place/Bennett+University+(Times+of+India+Group)/@28.4506465,77.5820091,17z/data=!3m1!4b1!4m5!3m4!1s0x390cbf94deb6bc39:0x7ba6bedc9a2b537f!8m2!3d28.4506465!4d77.5841978"]
+    },
+
+    {"tag": "courses",
+        "patterns": ["What courses are offered?", "Tell me about available programs", "List of courses", "Programs at Bennett University", "Fields of study"],
+        "responses": ["Bennett University provides a range of courses, including but not limited to Computer Science, Mechanical Engineering, Business Administration, and more. For detailed information about each program, you can explore our courses at https://www.bennett.edu.in/programs/ . "]
+    },
+
+    {"tag": "admissions",
+        "patterns": ["Tell me about admissions", "How can I apply?", "Admission process", "Application requirements", "What is the admission criteria?"],
+        "responses": ["Bennett University follows a comprehensive admission process. To learn about eligibility criteria, application requirements, and important dates, please visit https://www.bennett.edu.in/admissions . "]
+    },
+
+    {"tag": "faculty",
+        "patterns": ["Tell me about the faculty", "Who are the professors?", "Faculty members at Bennett University", "Teaching staff"],
+        "responses": ["Our esteemed faculty members bring extensive experience and expertise. To learn more about them, visit https://www.bennett.edu.in/faculty ."]
+    },
+
+    {"tag": "campus_facilities",
+        "patterns": ["What facilities does the campus have?", "Tell me about campus amenities", "Facilities for students", "Campus services"],
+        "responses": ["Bennett University offers state-of-the-art facilities, including modern classrooms, labs, sports facilities, and more. Explore our campus amenities at https://www.bennett.edu.in/campus/facilities. "]
+    },
+
+    {"tag": "scholarships",
+        "patterns": ["Are there scholarships available?", "Tell me about financial aid", "Scholarship programs", "How can I get a scholarship?"],
+        "responses": ["Bennett University provides various scholarship opportunities. To check eligibility and application details, visit https://www.bennett.edu.in/admissions/scholarships ."]
+    },
+
+    {"tag": "events",
+        "patterns": ["What events are happening?", "Upcoming university events", "Campus activities", "Event calendar"],
+        "responses": ["Stay updated on our vibrant campus life and events. Check our event calendar at https://www.bennett.edu.in/campus/events ."]
+    },
+
+    {"tag": "alumni",
+        "patterns": ["Tell me about Bennett University alumni", "Alumni success stories", "Where are the alumni now?", "Alumni network"],
+        "responses": ["Discover the achievements of Bennett University alumni and the strong network they've built. Learn more at https://www.bennett.edu.in/alumni ."]
+    },
+
+    {"tag": "internships",
+        "patterns": ["Are there internship opportunities?", "Internship programs", "How to find internships", "Internship support"],
+        "responses": ["Explore diverse internship opportunities for students. Check for the latest programs at https://www.bennett.edu.in/placement/internships ."]
+    },
+
+
+    {"tag": "admission_deadlines",
+        "patterns": ["What are the admission deadlines?", "When is the application deadline?", "Important admission dates", "Deadline for applying"],
+        "responses": ["Stay informed about admission deadlines. Refer to the official schedule at https://www.bennett.edu.in/admissions ."]
+    },
+
+
+    {"tag": "research",
+        "patterns": ["Tell me about research initiatives", "Research centers at Bennett University", "Current research projects", "How to get involved in research"],
+        "responses": ["Explore our cutting-edge research initiatives and opportunities for involvement. Visit https://www.bennett.edu.in/research ."]
+    },
+
+    {"tag": "international_students",
+        "patterns": ["Information for international students", "International student admissions", "Support for international students", "International student services"],
+        "responses": ["Bennett University welcomes international students! Learn about admissions and support services at https://www.bennett.edu.in/international-admissions ."]
+    },
+
+    {"tag": "library",
+        "patterns": ["Tell me about library resources", "Library services", "Available books and journals", "Library hours"],
+        "responses": ["Explore our extensive library resources and services. Find more details at https://www.bennett.edu.in/campus/library ."]
+    },
+
+    {"tag": "student_clubs",
+        "patterns": ["Are there student clubs?", "List of clubs at Bennett University", "Joining student organizations", "Club activities"],
+        "responses": ["Get involved in various student clubs and enrich your university experience. Discover more at https://www.bennett.edu.in/campus/student-life/clubs ."]
+    },
+
+    {"tag": "tech_fest",
+        "patterns": ["Tell me about the university's tech fest", "When is the tech fest?", "Tech fest events", "Participating in tech fest"],
+        "responses": ["Experience innovation and technology at our annual tech fest. Stay tuned for updates at https://www.bennett.edu.in/campus/events/tech-fest ."]
+    },
+
+    {"tag": "health_wellness",
+        "patterns": ["What health services are available?", "Student health and wellness", "Healthcare facilities", "Wellness programs"],
+        "responses": ["Prioritize your well-being with our health and wellness services. Learn more at https://www.bennett.edu.in/campus/health-wellness ."]
+    },
+
+    {"tag": "online_learning",
+        "patterns": ["Tell me about online learning options", "Online courses at Bennett University", "Distance education programs", "E-learning opportunities"],
+        "responses": ["Explore flexible online learning options offered by Bennett University. Discover more at https://www.bennett.edu.in/online-learning ."]
+    },
+
+    {"tag": "sports_facilities",
+        "patterns": ["Tell me about sports facilities", "Available sports amenities", "Participating in sports", "Intramural sports"],
+        "responses": ["Stay active with our top-notch sports facilities. Find details on available amenities at https://www.bennett.edu.in/campus/sports-facilities ."]
+    },
+
+    {"tag": "social_responsibility",
+        "patterns": ["Tell me about social responsibility initiatives", "Community service projects", "Volunteer opportunities", "Social impact programs"],
+        "responses": ["Discover our commitment to social responsibility and community engagement. Learn more at https://www.bennett.edu.in/campus/social-responsibility ."]
+    },
+
+    {"tag": "guest_lectures",
+        "patterns": ["Are there guest lectures?", "Upcoming guest speaker events", "Guest lectures at Bennett University", "Participating in guest lectures"],
+        "responses": ["Stay informed about insightful guest lectures and speaker events. Check for updates at https://www.bennett.edu.in/campus/events/guest-lectures ."]
+    },
+
+    {"tag": "hostel",
+        "patterns": [ "What are the hostel facilities at Bennett University?", "Tell me about the hostel at Bennett University", "How is the hostel life at Bennett University?", "How can I apply for hostel at Bennett University?" ],
+        "responses": [ "Bennett University has a state-of-the-art hostel facility for its students. The hostel has spacious and well-furnished rooms, 24x7 security, Wi-Fi, laundry, housekeeping, and medical services. The hostel also has a cafeteria, a gym, a library, a common room, and a recreation center.", "At Bennett University, you can enjoy a comfortable and convenient hostel experience. The hostel offers you a home away from home, with all the amenities and facilities you need. The hostel also provides you with opportunities to interact with your peers, participate in cultural and sports activities, and develop your personality." ]
+    },
+
+    {"tag": "thanks",
+        "patterns": ["Thank you", "Thanks", "Appreciate it", "Thank you for your help"],
+        "responses": ["You're welcome! If you have any more questions, feel free to ask.", "You're welcome. If there's anything else you need assistance with, just let me know.", "No problem! If you need further assistance, don't hesitate to ask."]
+    },
+
+    {"tag": "fees",
+        "patterns": ["What is the fees of college", "fee", "What is the fee of a student enrolled for a programme in the University", "What is the break-up of the fee?"],
+        "responses": ["All the programs command different fee structures. For detailed structure visit: https://www.bennett.edu.in/admission/fee-structure/ ."]
+    },
+
+    {"tag": "wifi",
+        "patterns": ["Is wifi available", "wifi", "wi-fi", "Will I get free Wi-Fi?", "does Internet available in campus", "does net comes in college", "what is the speed of net or internet"],
+        "responses": ["At Bennett University, students have access to unlimited Wi-Fi through the entire campus."]
+    },
+
+    {"tag": "mess",
+        "patterns": ["What kind of food is served in the University cafeteria?", "what are the timings of mess", "is mess available?", "can we get food in college", "do we have a cafeteria"],
+        "responses": ["The university offers vegetarian food four times a day including weekends and holidays which comes under mandatory fooding and lodging fee payment. Apart from this, the university has opened non-vegetarian cafeteria opened all days and some delectable snacking, myriad food, ice-cream, juice corners are inside the campus."]
+    },
+    {"tag": "contact",
+        "patterns": ["how to contact the college","phone number of college", "e-mail id of college", "what is the contact number for university", "email for queries?"],
+        "responses": ["Toll Free No:18001038484, General Queries: 01207199300, Email: info@bennett.edu.in, for admission related: admissions@bennett.edu.in, Whatsapp:+918860309257"]
+    }
+]}
